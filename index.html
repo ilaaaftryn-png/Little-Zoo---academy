@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Little Zoo Academy</title>
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;
+ font-family:'Trebuchet MS',sans-serif;
+ background:#fff9ec;
+ color:#51445e;
+ text-align:center;
+}
+header{
+ padding:25px 15px 10px;
+}
+.logo{
+ font-size:27px;
+ font-weight:900;
+ color:#ff8b57;
+}
+.tagline{color:#8b7898;font-size:14px}
+.hero{
+ margin:20px auto;
+ padding:25px 16px;
+ max-width:850px;
+}
+h1{
+ font-size:clamp(28px,7vw,44px);
+ color:#7653a6;
+ margin:12px 0;
+}
+.hero p{font-size:16px;line-height:1.6}
+.animals{
+ display:grid;
+ grid-template-columns:repeat(3,1fr);
+ gap:12px;
+ max-width:600px;
+ margin:25px auto;
+}
+.animal{
+ background:white;
+ border-radius:22px;
+ padding:15px 5px;
+ box-shadow:0 5px 15px #ddc9b855;
+ border:2px solid #fff;
+}
+.face{font-size:clamp(43px,12vw,70px)}
+.animal h3{margin:8px 0 3px;font-size:16px}
+.animal small{color:#9989a5}
+button{
+ border:0;
+ border-radius:30px;
+ padding:16px 30px;
+ background:#ff8b57;
+ color:white;
+ font-size:17px;
+ font-weight:bold;
+ box-shadow:0 5px 0 #dc7047;
+ cursor:pointer;
+}
+button:active{transform:translateY(3px);box-shadow:0 2px 0 #dc7047}
+.worlds{
+ display:none;
+ max-width:650px;
+ margin:30px auto;
+ padding:15px;
+}
+.world{
+ background:white;
+ border-radius:18px;
+ margin:12px 0;
+ padding:18px;
+ font-weight:bold;
+ box-shadow:0 4px 12px #ddc9b855;
+}
+footer{padding:30px 10px;color:#9b8da4;font-size:13px}
+@media(max-width:380px){
+ .animals{gap:7px}
+ .animal{padding:10px 3px}
+ .animal h3{font-size:13px}
+}
+</style>
+</head>
+<body>
+<header>
+ <div class="logo">🌈 LITTLE ZOO ACADEMY</div>
+ <div class="tagline">Play, Learn & Grow!</div>
+</header>
+
+<section class="hero">
+ <h1>Halo, Little Explorer! 🥰</h1>
+ <p>Ayo bermain, belajar, dan bertualang bersama teman-teman hewan kesayanganmu!</p>
+
+ <h2>Kenalan dengan teman-teman kita!</h2>
+ <div class="animals">
+  <div class="animal"><div class="face">🐻</div><h3>Bubu</h3><small>Brave Bear</small></div>
+  <div class="animal"><div class="face">🦁</div><h3>Lilo</h3><small>Happy Lion</small></div>
+  <div class="animal"><div class="face">🐰</div><h3>Mimi</h3><small>Smart Bunny</small></div>
+  <div class="animal"><div class="face">🐘</div><h3>Elly</h3><small>Kind Elephant</small></div>
+  <div class="animal"><div class="face">🦊</div><h3>Foxy</h3><small>Clever Fox</small></div>
+  <div class="animal"><div class="face">🦒</div><h3>Gigi</h3><small>Curious Giraffe</small></div>
+ </div>
+
+ <button onclick="startAdventure()">Mulai Petualangan ✨</button>
+
+ <div class="worlds" id="worlds">
+  <h2>🌳 Pilih Dunia Petualanganmu!</h2>
+  <div class="world">🔢 Math Adventure</div>
+  <div class="world">🔤 Alphabet World</div>
+  <div class="world">📖 Reading Forest</div>
+  <div class="world">✏️ Writing Playground</div>
+  <div class="world">🎨 Creative Studio</div>
+  <div class="world">🧩 Brainy Zoo</div>
+ </div>
+</section>
+
+<footer>© Little Zoo Academy · Play, Learn & Grow! 💖</footer>
+
+<script>
+function startAdventure(){
+ document.getElementById('worlds').style.display='block';
+ document.getElementById('worlds').scrollIntoView({behavior:'smooth'});
+}
+</script>
+</body>
+                               </html>
+                               
